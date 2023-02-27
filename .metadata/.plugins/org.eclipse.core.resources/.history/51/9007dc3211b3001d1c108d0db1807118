@@ -1,0 +1,68 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Pessoa;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Quantas pessoas serao digitadas: ");
+		int n = sc.nextInt();
+		Pessoa vect[] = new Pessoa[n];
+		
+		for (int i = 0; i < vect.length; i++) {
+			double altura = sc.nextDouble();
+			char sexo = sc.next().charAt(0);
+			vect[i] = new Pessoa(altura, sexo);
+		}
+		
+		double menorAltura = 0;
+		double maiorAltura = 0;
+		for (int i = 0; i < vect.length; i++) {
+			if (i == 0) {
+				menorAltura = vect[i].getAltura();
+				maiorAltura = vect[i].getAltura();
+			}
+			else  {
+				if (vect[i].getAltura() < menorAltura) {
+					menorAltura = vect[i].getAltura();
+				}
+				if (vect[i].getAltura() > maiorAltura) {
+					maiorAltura = vect[i].getAltura();
+				}
+			}
+		}
+		
+		double alturaMulheres = 0;
+		double contMulheres = 0;
+		for(int i = 0; i < vect.length; i++) {
+			if (vect[i].getSexo() == 'f') {
+				alturaMulheres += vect[i].getAltura();
+				contMulheres += 1;
+			}
+		}
+		
+		double mediaAlturaMulheres = alturaMulheres / contMulheres;
+		
+		int contHomens = 0;
+		for (int i = 0; i < vect.length; i++) {
+			if (vect[i].getSexo() == 'm') {
+				contHomens += 1;
+			}
+		}
+		
+		System.out.println(contHomens);
+		System.out.println(mediaAlturaMulheres);
+		System.out.println(menorAltura);
+		System.out.println(maiorAltura);
+		
+		sc.close();
+	}
+
+}

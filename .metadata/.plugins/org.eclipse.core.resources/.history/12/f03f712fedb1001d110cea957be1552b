@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o numero do Fatorial: ");
+		int n = sc.nextInt();
+		
+		for (int i = 0; i < n; i++) {
+			int fat = sc.nextInt();
+			int valor = fat * (fat - i);
+			System.out.println(valor);
+		}
+		
+		sc.close();
+	}
+
+}

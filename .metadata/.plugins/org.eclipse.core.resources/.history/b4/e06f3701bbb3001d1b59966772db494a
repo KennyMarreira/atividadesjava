@@ -1,0 +1,31 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Employee;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite quantos funcionarios registrar: ");
+		int n = sc.nextInt();
+		Employee [] vect = new Employee[n];
+		
+		for (int i = 0; i < vect.length; i++) {
+			int id = sc.nextInt();
+			String nome = sc.next();
+			double salario = sc.nextDouble();
+			vect[i] = new Employee(id, nome, salario)
+		}
+		
+		
+		
+		sc.close();
+	}
+
+}

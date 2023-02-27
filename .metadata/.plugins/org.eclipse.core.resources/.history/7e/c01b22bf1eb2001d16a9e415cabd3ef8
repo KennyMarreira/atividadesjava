@@ -1,0 +1,30 @@
+package entities;
+
+public class Client {
+	
+	private int conta;
+	private String titular;
+	private double saldo;
+	
+	public Client(int conta, String titular) {
+		this.conta = conta;
+		this.titular = titular;
+	}
+	
+	public void setConta(int conta) {
+		this.conta = conta;
+	}
+	
+	public int getConta() {
+		return conta;
+	}
+	
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+	
+	public String getTitular() {
+		return titular;
+	}
+
+}

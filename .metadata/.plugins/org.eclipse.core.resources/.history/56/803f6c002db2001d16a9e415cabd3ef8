@@ -1,0 +1,57 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Client;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Client client;
+		
+		int conta = sc.nextInt();
+
+		String titular = sc.next();
+
+		
+		client.(conta);
+		System.out.println("Conta: " + client.getConta());
+		
+		client.setTitular(titular);
+		System.out.println("Titular: " + client.getTitular());
+		
+		String depInicial = sc.next();
+		
+		if (depInicial == "y") {
+			Client client = new Client(conta, titular, saldo);
+
+		}
+		else {
+			client.setSaldo(0);
+		}
+		System.out.println(client.getSaldo());
+		
+		System.out.println("Enter a deposit value: ");
+		double valor = sc.nextDouble();
+		client.deposito(valor);
+		
+		System.out.println(client.getSaldo());
+		
+		System.out.println("Enter a withdraw value: ");
+		valor = sc.nextDouble();
+		client.saque(valor);
+		
+		System.out.println(client.getSaldo());
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

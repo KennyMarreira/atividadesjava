@@ -50,4 +50,5 @@
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="entities.Contract"/>
+    <fullyQualifiedTypeName name="model.service.ContractService"/>
 </qualifiedTypeNameHistroy>

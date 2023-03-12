@@ -45,10 +45,17 @@
     <fullyQualifiedTypeName name="model.entities.CarRental"/>
     <fullyQualifiedTypeName name="model.services.RentalServices"/>
     <fullyQualifiedTypeName name="java.time.Duration"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="entities.Contract"/>
     <fullyQualifiedTypeName name="model.service.ContractService"/>
+    <fullyQualifiedTypeName name="entities.Installment"/>
+    <fullyQualifiedTypeName name="model.service.PayPalServices"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="model.entities.Circle"/>
+    <fullyQualifiedTypeName name="model.enums.Color"/>
+    <fullyQualifiedTypeName name="model.entities.AbstractShape"/>
+    <fullyQualifiedTypeName name="model.entities.Rectangle"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
 </qualifiedTypeNameHistroy>

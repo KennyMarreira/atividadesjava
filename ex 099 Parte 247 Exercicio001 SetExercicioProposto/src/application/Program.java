@@ -1,8 +1,8 @@
 package application;
 
+import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Program {
 
@@ -10,38 +10,36 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		Set<Integer> a = new TreeSet<>();
-		Set<Integer> b = new TreeSet<>();
-		Set<Integer> c = new TreeSet<>();
+		Set<Integer> a = new HashSet<>();
+		Set<Integer> b = new HashSet<>();
+		Set<Integer> c = new HashSet<>();
 		
 		System.out.print("How many students for course A? ");
-		int courseA = sc.nextInt();
-		for (int i = 0; i < courseA; i++) {
+		int n = sc.nextInt();
+		for (int i = 0; i < n; i++) {
 			int user = sc.nextInt();
 			a.add(user);
 		}
 		
 		System.out.print("How many students for course B? ");
-		int courseB = sc.nextInt();
-		for (int i = 0; i < courseB; i++) {
+		n = sc.nextInt();
+		for (int i = 0; i < n; i++) {
 			int user = sc.nextInt();
 			b.add(user);
 		}
 		
 		System.out.print("How many students for course C? ");
-		int courseC = sc.nextInt();
-		for (int i = 0; i < courseC; i++) {
+		n = sc.nextInt();
+		for (int i = 0; i < n; i++) {
 			int user = sc.nextInt();
 			c.add(user);
 		}
 		
-		Set<Integer> d = new TreeSet<>(a);
-		d.addAll(b);
+		Set<Integer> total = new HashSet<>(a);
+		total.addAll(b);
+		total.addAll(c);
 		
-		Set<Integer> e = new TreeSet<>(d);
-		e.addAll(c);
-		
-		System.out.print("Total Students: " + e.size());
+		System.out.print("Total Students: " + total.size());
 		
 		sc.close();
 	}

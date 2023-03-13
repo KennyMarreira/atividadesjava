@@ -21,6 +21,7 @@ INDEX VERSION 1.131+C:\Users\kenny\OneDrive\Área de Trabalho\java-udemy\.metadat
 3286183842.index
 461262972.index
 1278739031.index
+1729818837.index
 1771596854.index
 899562773.index
 2076139540.index

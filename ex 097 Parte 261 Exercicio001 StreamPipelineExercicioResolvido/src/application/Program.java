@@ -16,6 +16,14 @@ public class Program {
 
 	public static void main(String[] args) {
 		
+		/* arquivo in.txt
+		Tv,900.00
+		Mouse,50.00
+		Tablet,350.50
+		HD Case,80.90
+		Computer,850.00
+		Monitor,290.00*/
+		
 		Locale.setDefault(Locale.US);
 		
 		Scanner sc = new Scanner(System.in);
